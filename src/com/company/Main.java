@@ -27,3 +27,24 @@ public class Main {
         System.out.println("Total cost: £" + (painter_cost + cost_materials));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
