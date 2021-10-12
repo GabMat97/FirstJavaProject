@@ -1,4 +1,4 @@
-package com.TSI.paint;
+package com.company;
 import java.util.Scanner;
 public class Main {
 
