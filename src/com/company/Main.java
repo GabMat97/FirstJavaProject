@@ -27,12 +27,12 @@ public class Main {
 
         String message="";
 
-        if (total_cost<10) {
-            message= "Fairly cheap you're only paying" + total_cost;
-        } else if (total_cost>=10 && total_cost<=20) {
+        if (total_cost<15) {
+            message= "Fairly cheap you're only paying " + total_cost;
+        } else if (total_cost>=15 && total_cost<=40) {
             message= "Okay it's getting spenny you're paying " +total_cost;
         } else {
-            message= "Mate you have to be rich or else you can't afford this amount" + total_cost;
+            message= "Mate you have to be rich or else you can't afford this amount " + total_cost;
         }
         System.out.println(message);
     }
