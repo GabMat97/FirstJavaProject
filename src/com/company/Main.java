@@ -23,8 +23,18 @@ public class Main {
         float rate = Float.parseFloat(myObj4.nextLine());
         // painter paints 5m^2 per hour
         float painter_cost = rate*dim/5;
-        System.out.println("cost of labour : £" + painter_cost);
-        System.out.println("Total cost: £" + (painter_cost + cost_materials));
+        float total_cost = painter_cost + cost_materials;
+
+        String message="";
+
+        if (total_cost<10) {
+            message= "Fairly cheap you're only paying" + total_cost;
+        } else if (total_cost>=10 && total_cost<=20) {
+            message= "Okay it's getting spenny you're paying " +total_cost;
+        } else {
+            message= "Mate you have to be rich or else you can't afford this amount" + total_cost;
+        }
+        System.out.println(message);
     }
 }
 
