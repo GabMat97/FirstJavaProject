@@ -26,6 +26,8 @@ public class Main {
         // painter paints 5m^2 per hour
         float painter_cost = rate*dim/5;
         float total_cost = painter_cost + cost_materials;
+        double costModifier = 0;
+        double[] costModTable = {getNumberMod(costModifier),1.1,1.4,1.9};
 
         List<String> StoresArray = new ArrayList<String>();
         StoresArray.add("B&Q");
@@ -40,8 +42,7 @@ public class Main {
         StoresLinked.add("Wickes");
         for (String element : StoresLinked){
             System.out.println(element);
-        } //how to create linkedlist for int values?
-        
+        } //how to create linkedlist for int values
 
         String message="";
         if (total_cost<15) {
@@ -52,6 +53,10 @@ public class Main {
             message= "Mate you have to be rich or else you can't afford this amount " + total_cost;
         }
         System.out.println(message);
+    }
+    public static double getNumberMod(double x) {
+        double y = x+1;
+        return y;
     }
 }
 
