@@ -1,5 +1,7 @@
 package com.company;
 import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -25,8 +27,23 @@ public class Main {
         float painter_cost = rate*dim/5;
         float total_cost = painter_cost + cost_materials;
 
-        String message="";
+        List<String> StoresArray = new ArrayList<String>();
+        StoresArray.add("B&Q");
+        StoresArray.add("Homebase");
+        StoresArray.add("Wickes");
+        System.out.println( "Available Stores: " + StoresArray);
 
+        //Linked List of Stores
+        List<String> StoresLinked = new LinkedList<String>();
+        StoresLinked.add("time");
+        StoresLinked.add("Homebase");
+        StoresLinked.add("Wickes");
+        for (String element : StoresLinked){
+            System.out.println(element);
+        } //how to create linkedlist for int values?
+        
+
+        String message="";
         if (total_cost<15) {
             message= "Fairly cheap you're only paying " + total_cost;
         } else if (total_cost>=15 && total_cost<=40) {
